@@ -1,6 +1,22 @@
 .pallete {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .pallete-colors {
   height: 90%;
+}
+
+.pallete-footer {
+  background: white;
+  height: 7vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+}
+
+.emoji {
+  font-size: 1.5rem;
+  margin: 1rem;
 }
