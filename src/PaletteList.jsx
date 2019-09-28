@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import MiniPalette from "./MiniPalette";
 import { withStyles } from "@material-ui/styles";
 
@@ -41,7 +40,7 @@ class PaletteList extends Component {
     const { palettes, classes } = this.props;
     return (
       <div className={classes.root}>
-        <div classNmae={classes.container}>
+        <div className={classes.container}>
           <nav className={classes.nav}>
             <h1>Color app</h1>
           </nav>
@@ -50,6 +49,7 @@ class PaletteList extends Component {
               <MiniPalette
                 {...pal}
                 handleClick={() => this.goToPlatte(pal.id)}
+                key={pal.id}
               />
             ))}
           </div>
